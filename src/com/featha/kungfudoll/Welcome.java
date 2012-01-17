@@ -73,8 +73,8 @@ public class Welcome extends DroidGap {
         						public void run() {
         							String str[] = line.split(" ");
         							Log.d("socket", str[0] + " - " + str[1]);
-        							appView.loadUrl("javascript:$('#score').text('2');");
-        							appView.loadUrl("javascript:$('#speed').text('200');");
+        							appView.loadUrl("javascript:$('#score').text('" + str[0] + "');");
+        							appView.loadUrl("javascript:$('#speed').text('" + str[1] + "');");
         						}
         					});                        	
                         }
